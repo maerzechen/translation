@@ -46,10 +46,6 @@
         "TITLE": "危険 ゾーン",
         "KEYWORDS": "同期 ログ 削除 アカウント リセット ウォークスルー 進捗 リセット"
       },
-      "NOTIFICATIONS": {
-        "TITLE": "モバイル ストリーク 通知",
-        "DESCRIPTION": "毎日のフラッシュカードの連続記録についてモバイルプッシュ通知を送信します。リマインダーは、日本時間の毎日午後 6 時に届きます。"
-      },
       "SYNCING": {
         "TITLE": "同期しています",
         "KEYWORDS": "画像とPDFを強制的に同期"
@@ -65,18 +61,13 @@
       "PRIVACY": {
         "TITLE": "プライバシー",
         "KEYWORDS": "プライバシー"
+      },
+      "NOTIFICATIONS": {
+        "TITLE": "モバイル ストリーク 通知",
+        "DESCRIPTION": "毎日のフラッシュカードの連続記録についてモバイルプッシュ通知を送信します。リマインダーは、日本時間の毎日午後 6 時に届きます。"
       }
     },
     "FLASHCARDS": {
-      "AI": {
-        "ENABLE": {
-          "TITLE": "AI 機能を有効にする",
-          "DESCRIPTION": "AIベースのオートコンプリート、採点、フラッシュカード生成を使用します。多くのAI機能を使用すると、ノートのスニペットがOpenAIに送信されます。OpenAIのプライバシーポリシーはhttps://openai.com/policies/privacy-policyをご確認ください。"
-        },
-        "OPENAI_KEY": {
-          "TITLE": "OpenAI APIキー"
-        }
-      },
       "DAILY_TARGET": {
         "MAXIMUM_DAILY_TARGET": {
           "TITLE": "1 日の最大目標",
@@ -139,6 +130,15 @@
         },
         "TAG_CLUSTERS": {
           "TITLE": "タグクラスター"
+        }
+      },
+      "AI": {
+        "ENABLE": {
+          "TITLE": "AI 機能を有効にする",
+          "DESCRIPTION": "AIベースのオートコンプリート、採点、フラッシュカード生成を使用します。多くのAI機能を使用すると、ノートのスニペットがOpenAIに送信されます。OpenAIのプライバシーポリシーはhttps://openai.com/policies/privacy-policyをご確認ください。"
+        },
+        "OPENAI_KEY": {
+          "TITLE": "OpenAI APIキー"
         }
       }
     },
@@ -230,6 +230,7 @@
       }
     },
     "NOTIFICATIONS": {
+      "TOGGLE_LABEL": "どの通知をデバイス/受信トレイに直接受信するかを制御します",
       "ENABLE_PUSH_TITLE": "プッシュ通知を有効にしますか?",
       "ENABLE_PUSH_LABEL": "デバイスに通知を直接受信",
       "ENABLE_DUE_CARDS_TITLE": "期限カードバッジを有効にしますか?",
@@ -237,7 +238,6 @@
       "ENABLE_EMAIL_TITLE": "電子メール通知を有効にしますか？",
       "ENABLE_EMAIL_LABEL": "通知を受信ボックスに直接受け取る",
       "TOGGLE_TITLE": "通知のフィルター",
-      "TOGGLE_LABEL": "どの通知をデバイス/受信トレイに直接受信するかを制御します",
       "DESCRIPTIONS": {
         "STREAK": {
           "TITLE": "連続通知",

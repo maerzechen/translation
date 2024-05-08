@@ -46,10 +46,6 @@
         "TITLE": "Gefahrenzone",
         "KEYWORDS": "Protokoll synchronisieren, Konto löschen, Rundgang zurücksetzen, Fortschritt zurücksetzen, Einarbeitung, erweiterte Kontoeinstellungen"
       },
-      "NOTIFICATIONS": {
-        "TITLE": "Mobile Erfolgsserie Benachrichtigungen",
-        "DESCRIPTION": "Senden Sie mobile Push-Erinnerungen über Ihre tägliche Lernkarten Erfolgsserie. Die Erinnerungen kommen jeden Tag um 18:00 Uhr in Ihrer lokalen Zeitzone."
-      },
       "SYNCING": {
         "TITLE": "Synchronisierung",
         "KEYWORDS": "Synchronisierung von Bildern und PDFs erzwingen"
@@ -65,13 +61,17 @@
       "PRIVACY": {
         "TITLE": "Privatsphäre",
         "KEYWORDS": "Privatsphäre"
+      },
+      "NOTIFICATIONS": {
+        "TITLE": "Mobile Erfolgsserie Benachrichtigungen",
+        "DESCRIPTION": "Senden Sie mobile Push-Erinnerungen über Ihre tägliche Lernkarten Erfolgsserie. Die Erinnerungen kommen jeden Tag um 18:00 Uhr in Ihrer lokalen Zeitzone."
       }
     },
     "FLASHCARDS": {
       "DAILY_TARGET": {
         "MAXIMUM_DAILY_TARGET": {
           "TITLE": "Maximales Tagesziel",
-          "DESCRIPTION": "Begrenzen Sie die Anzahl der Lernkarten. RemNote fordert Sie zum Üben auf, um Ihr Tagesziel bei diesem Wert zu erreichen."
+          "DESCRIPTION": "Begrenzen Sie die Anzahl der Karteikarten. RemNote fordert Sie zum Üben auf, um Ihr Tagesziel bei diesem Wert zu erreichen."
         },
         "TODAYS_TARGET": "Das heutige Ziel:",
         "TODAYS_TARGET_EXPLANATION": "RemNote versucht, Ihr Tagesziel so festzulegen, dass Sie, wenn Sie das Ziel jeden Tag erreichen, in den nächsten 7 Tagen alle zur Überprüfung fälligen Karten ausfüllen. Das Tagesziel wird jedoch niemals höher sein als das oben festgelegte Maximum."
@@ -84,7 +84,7 @@
         },
         "NEW_CARDS_PER_DAY": {
           "TITLE": "Maximale Anzahl neuer Karten pro Tag",
-          "DESCRIPTION": "Fügen Sie jeden Tag höchstens so viele neu erstellte Lernkarten in Ihre Lernkartenwarteschlange ein. Auf diese Weise werden neue Karten in einem gleichmäßigen und nicht in einem großen Stapel in Ihre Warteschlange gelangen."
+          "DESCRIPTION": "Fügen Sie jeden Tag höchstens so viele neu erstellte Karteikarten in Ihre Karteikartenwarteschlange ein. Auf diese Weise werden neue Karten in einem gleichmäßigen und nicht in einem großen Stapel in Ihre Warteschlange gelangen."
         },
         "STALE_CARDS_PER_DAY": {
           "TITLE": "Maximale Anzahl veralteter Karten pro Tag",
@@ -93,6 +93,10 @@
         "LEECH_THRESHOLD": {
           "TITLE": "Klammernde Karteikarten Schwellwert",
           "DESCRIPTION": "Klammernde Karteikarten sind schwierige Karten, die man immer wieder lernt und dann wieder vergisst. Wenn Sie bei einer Karte öfter auf „Vergessen“ klicken, werden Sie von uns gewarnt, damit Sie herausfinden können, warum Sie sich damit schwer tun und das Problem beheben können. Stellen Sie hier einen höheren Wert ein, um die Warnung zu den klammernden Karteikarten seltener zu sehen."
+        },
+        "LEARN_AHEAD_LIMIT": {
+          "TITLE": "Über das Ziel hinaus lernen",
+          "DESCRIPTION": "Wenn Sie alle fälligen Karten geübt haben, wie weit in der Zukunft können wir dann die Karten nehmen, die noch nicht fällig sind? So können Sie vermeiden, dass Sie sehr bald wieder üben müssen."
         },
         "AUTOPLAY_MEDIA": {
           "TITLE": "Automatisches Abspielen von Medien",
@@ -105,6 +109,10 @@
         "SIMPLIFIED_FLASHCARD_BUTTONS": {
           "TITLE": "Vereinfachte Karteikarten-Schaltflächen",
           "DESCRIPTION": "Zeigen Sie beim Lernen von Karteikarten nur die Antwortschaltfläche „Vergessen“ und „Mit Mühe erinnert“ an, statt alle fünf Optionen."
+        },
+        "NEXT_DAY_STARTS_AT": {
+          "TITLE": "Nächster Tag startet um",
+          "DESCRIPTION": "Legen Sie die Zeit fest, zu der täglich neue Karten in Ihrer Warteschlange erscheinen sollen."
         }
       },
       "VISUAL": {
@@ -123,7 +131,7 @@
           "DESCRIPTION": "Üben Sie lieber Rems, die sich gegenseitig referenzieren."
         },
         "TAG_CLUSTERS": {
-          "TITLE": "EtikettGruppierung",
+          "TITLE": "Etikett Gruppierung",
           "DESCRIPTION": "Üben Sie lieber Rems mit demselben Etikett."
         },
         "HIERARCHY_CLUSTERS": {
@@ -143,7 +151,14 @@
         "TITLE": {
           "PC": "Mit Alt+Enter auteilen",
           "MAC": "Mit Opt+Return aufteilen"
+        },
+        "DESCRIPTION": {
+          "PC": "Alt + Enter in der Mitte eines Rems drücken, um den Text in separate Rems aufzuteilen.",
+          "MAC": "Opt + Return in der Mitte eines Rems drücken, um den Text in separate Rems aufzuteilen."
         }
+      },
+      "ENTER_TO_OUTDENT": {
+        "TITLE": "Enter drücken um Auszurücken"
       },
       "DOUBLE_SLASH_FOR_COMMAND_MENU": {
         "TITLE": "Doppelter Schrägstrich für Befehlsmenü",
@@ -285,12 +300,14 @@
       }
     },
     "NOTIFICATIONS": {
+      "ENABLE_COMMUNITY_TITLE": "Geteilte Karteikarten Benachrichtigungen",
+      "TOGGLE_LABEL": "Steuern Sie, welche Benachrichtigungen Sie direkt auf Ihrem Gerät/Posteingang erhalten möchten",
       "ENABLE_PUSH_TITLE": "Push-Benachrichtigungen aktivieren?",
       "ENABLE_PUSH_LABEL": "Erhalten Sie Benachrichtigungen direkt auf Ihr Gerät",
+      "ENABLE_DUE_CARDS_LABEL": "Gesamtzahl der fälligen Karten als Benachrichtigung an dem RemNote-App-Icon auf Ihrem Startbildschirm anzeigen.",
       "ENABLE_EMAIL_TITLE": "E-Mail-Benachrichtigungen aktivieren?",
       "ENABLE_EMAIL_LABEL": "Erhalten Sie Benachrichtigungen direkt in Ihren Posteingang",
       "TOGGLE_TITLE": "Benachrichtigungen filtern",
-      "TOGGLE_LABEL": "Steuern Sie, welche Benachrichtigungen Sie direkt auf Ihrem Gerät/Posteingang erhalten möchten",
       "DESCRIPTIONS": {
         "STREAK": {
           "TITLE": "Strähne-Benachrichtigungen",
@@ -341,7 +358,8 @@
     "PROPERTY_WITH_COUNT_other": "{{count, number}} Eigenschaften",
     "ADD_NEW_PROPERTY": "Neue Eigenschaft hinzufügen",
     "AUTO_APPLY": "Automatisch anwenden",
-    "TURN_OFF_AUTO_APPLY": "Deaktiviere „Automatisches anwenden“.",
+    "SET_AS_AUTO_APPLY_TEMPLATE": "Als Vorlage für \"Automatisches anwenden\" festlegen",
+    "TURN_OFF_AUTO_APPLY": "Deaktiviere „Automatisches anwenden“",
     "VIEW_CONFIGURATION": "Tag konfigurieren",
     "HIDE_CONFIGURATION": "Konfiguration ausblenden",
     "PROPERTIES_HELP_TEXT": {
